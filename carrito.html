@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+	<title>Cakes&Co</title>
+</head>
+<body>
+	
+    <div class="jumbotron" id="myJumbotron">
+		<h1>Cakes&Co</h1>
+		<p>Tu tienda de repostería online</p> 
+	</div>		
+	<div class="container" id="compra">
+        <div id="atras">
+		<button type="button" id="backButton" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-chevron-left"></span> Atras
+        </button>
+	    </div>
+		<h3>Tu carrito</h3>
+		<table class="table" id="cartTable">
+			<thead>
+				<tr>
+					<th>Producto</th>
+					<th></th>
+					<th>Precio</th>
+					<th>Comprar</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th><img src="imagenes/molde.jpg" height="80px" width="80px"></th>
+					<th>Molde de silicona</th>
+					<th>5,90€</th>
+					<th>
+						<button type="button" class="btn btn-info">Añadir</button>
+					</th>
+				</tr>
+				<tr>
+					<th><img src="imagenes/manga.jpg" height="80px" width="80px"></th>
+					<th>Manga pastelera</th>
+					<th>3,90€</th>
+					<th>
+						<button type="button" class="btn btn-info">Añadir</button>
+					</th>
+				</tr>
+				<tr>
+					<th><img src="imagenes/varillas.jpg" height="80px" width="80px"></th>
+					<th>Varillas</th>
+					<th>4,50€</th>
+					<th>
+						<button type="button" class="btn btn-info">Añadir</button>
+					</th>
+				</tr>
+				<tr>
+					<th><img src="imagenes/fondant.jpg" height="80px" width="80px"></th>
+					<th>Fondant</th>	
+					<th>3,50€</th>
+					<th>
+						<button type="button" class="btn btn-info">Añadir</button>
+					</th>
+				</tr>
+				<tr>
+					<th><img src="imagenes/boquillas.jpg" height="80px" width="80px"></th>
+					<th>Set boquillas</th>
+					<th>8,50€</th>
+					<th>
+						<button type="button" class="btn btn-info">Añadir</button>
+					</th>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>

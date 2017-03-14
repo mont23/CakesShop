@@ -1,0 +1,63 @@
+#myJumbotron{
+	background: url(imagenes/background.jpg);
+	background-position: 34% 7%;
+	background-size: contain;
+	opacity: 0.8;
+}
+#myJumbotron>h1, #myJumbotron>p{
+	text-align: center;
+	font-weight: bolder;
+}
+#cart, #atras{
+    float: right;
+}
+
+#cartButton, #backButton{
+    color: deepskyblue;
+    font-size: 18px;
+    border: none;
+}
+#cartTable>tbody>tr>th{
+	vertical-align: middle;
+    font-size: 16px;
+}
+#productTable>tbody>tr>th{
+	vertical-align: middle;
+}
+.productName, .price{
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+.description>p{
+	font-weight: normal;
+}
+
+#compra{
+    display: none;
+}
+
+.cantidad{
+    width: 50px;
+    padding: 6px 9px;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#comprarButton{
+    margin-left: 50px;
+    width: 150px;
+}
+#totalCart{
+    float: right;   
+}
+#totalCart>h4{
+    font-weight: bolder;
+    display: inline-flex;  
+}
+#totalCompra{
+    display: inline-flex;  
+    margin-left: 20px; 
+    font-size: 18px;
+    font-weight: bolder;
+}

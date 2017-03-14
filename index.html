@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+    <title>Cakes&Co</title>
+</head>
+
+<body>
+
+    <div class="jumbotron" id="myJumbotron">
+        <h1>Cakes&Co</h1>
+        <p>Tu tienda de repostería online</p>
+    </div>
+    <div class="container" id="productos">
+        <div id="cart">
+            <button type="button" id="cartButton" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-shopping-cart"></span> Cesta
+        </button>
+        <span class="badge" id="cartBadge"></span></a><br>
+        </div>
+        <h3>Tienda</h3>
+        <table class="table" id="productTable">
+            <tbody>
+                <tr data-id="1">
+                    <th><img src="imagenes/molde.jpg" height="200px" width="200px"></th>
+                    <th>
+                        <div class="productName">Molde de silicona</div>
+                        <div class="description">
+                            <p>Molde para seis madalenas o cupcakes de silicona. Resistente a 250º. Lavar a mano. Medidas: 30cmx25cmx5cm</p>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="price">5,90€</div>
+                        <div class="addButton">
+                            <button type="button" class="btn btn-info">Añadir</button>
+                        </div>
+                    </th>
+                </tr>
+                <tr data-id="2">
+                    <th><img src="imagenes/manga.jpg" height="200px" width="200px"></th>
+                    <th>
+                        <div class="productName"> Manga pastelera</div>
+                        <div class="description">
+                            <p>Manga de color blanco de material resistente, ideal para decoración de tartas. Adaptable a todas
+                                las boquillas (no incluidas). Lavar a mano.</p>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="price">3,90€</div>
+                        <div class="addButton">
+                            <button type="button" class="btn btn-info">Añadir</button>
+                        </div>
+                    </th>
+                </tr>
+                <tr data-id="3">
+                    <th><img src="imagenes/Varillas.jpg" height="200px" width="200px"></th>
+                    <th>
+                        <div class="productName">Varillas</div>
+                        <div class="description">
+                            <p>Varilla metálica manual para uso culinario. Se puede poner en el lavavajillas, material no inoxidable.</p>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="price">4,50€</div>
+                        <div class="addButton">
+                            <button type="button" class="btn btn-info">Añadir</button>
+                        </div>
+                    </th>
+                </tr>
+                <tr data-id="4">
+                    <th><img src="imagenes/Fondant.jpg" height="200px" width="200px"></th>
+                    <th>
+                        <div class="productName">Fondant</div>
+                        <div class="description">
+                            <p>Pasta de azucar comestible para resposteria de la marca Funcakes. 200gr. Se mantiene suave durante
+                                bastante tiempo, no se endurece durante el procesamiento. Color azul cielo.</p>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="price">3,50€</div>
+                        <div class="addButton">
+                            <button type="button" class="btn btn-info">Añadir</button>
+                        </div>
+                    </th>
+                </tr>
+                <tr data-id="5">
+                    <th><img src="imagenes/boquillas.jpg" height="200px" width="200px"></th>
+                    <th>
+                        <div class="productName">Set de seis boquillas</div>
+                        <div class="description">
+                            <p>Estuche compuesto por seis boquillas ideales para decoración de tartas. Fuertes, de acero inoxidable,
+                                resistentes a la corrosión, reutilizables, antiadherentes, insípidas y no tóxicas. Lavar
+                                a mano.</p>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="price">8,90€</div>
+                        <div class="addButton">
+                            <button type="button" class="btn btn-info">Añadir</button>
+                        </div>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container" id="compra">
+        <div id="atras">
+            <button type="button" id="backButton" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-chevron-left"></span> Seguir comprando
+        </button>
+        </div>
+        <h3>Tu carrito</h3>
+       
+        <table class="table" id="cartTable">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th></th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <h3 id="noProduct">Aun no has añadido ningún producto</h3>
+            <tbody id="compraBody">
+                <!-- cart item -->
+                <tr id="cartItemTemplate" style="display:none" >
+                    <th><img src="" height="80px" width="80px"></th>
+                    <th class="name"></th>
+                    <th class="price"></th>
+                    <th>
+                        <input type="number" class="cantidad" value="1">
+                    </th>
+                    <th class="total"></th>
+                    <th>
+                        <button type="button" class="btn btn-default btn-sm removeButton">
+                            <span class="glyphicon glyphicon-remove-sign"></span>
+                        </button>
+                        
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="totalCart">
+            <h4>Total</h4>
+            <p id="totalCompra"></p>
+ 
+            <button type="button" class="btn btn-info" id="comprarButton">Finalizar compra</button>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
