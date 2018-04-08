@@ -9,7 +9,7 @@
 	font-weight: bolder;
 }
 #cart, #atras{
-    float: right;
+    float: left;
 }
 
 #cartButton, #backButton{
